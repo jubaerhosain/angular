@@ -3,7 +3,7 @@
     <li *ngFor="let item of myItems">
         <h1>{{item.name}}</h1> 
         <p>id: {{item.id}}, price: {{item.price}}, quantity: {{item.quantity}}</p>
-        <button *ngIf="item.quantity>0">Buy</button>
+        <button *ngIf="item.quantity>0" (click)="buyItem(item.id)">Buy</button>
         <button *ngIf="item.quantity<=0" (click)="requestItem()">Request Stock</button>
     </li>
 </ul>

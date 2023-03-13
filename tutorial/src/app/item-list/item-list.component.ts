@@ -18,4 +18,12 @@ export class ItemListComponent implements OnInit {
     requestItem(): void {
         alert("Your request is submitted");
     }
+
+    buyItem(id: number): void {
+        this.itemService.changeItem(id);
+        // this.myItems.forEach((element) => {
+        //     if(element.id === id)
+        //         element.quantity--;
+        // });
+    }
 }
