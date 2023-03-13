@@ -14,4 +14,8 @@ export class ItemListComponent implements OnInit {
         this.myItems = this.itemService.getItems();
         console.log(this.itemService.getItems());
     }
+
+    requestItem(): void {
+        alert("Your request is submitted");
+    }
 }
