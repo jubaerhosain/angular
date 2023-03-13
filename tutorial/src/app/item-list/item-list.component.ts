@@ -15,8 +15,8 @@ export class ItemListComponent implements OnInit {
         console.log(this.itemService.getItems());
     }
 
-    requestItem(): void {
-        alert("Your request is submitted");
+    requestItem(id: number): void {
+        alert(`Item ${id} requested`);
     }
 
     buyItem(id: number): void {
